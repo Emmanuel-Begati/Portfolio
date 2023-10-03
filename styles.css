@@ -373,9 +373,13 @@ nav .fa-solid{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
     #header{
         background-image: url(images/my-image.jpg);
+        width: 100%;
     }
     .header-text{
         margin-top: 100%;
@@ -430,5 +434,10 @@ nav .fa-solid{
     }
     .copyright{
         font-size: 14px;
+    }
+    .tab-contents ul li span{
+        color: #075b61;
+        font-size: 12px;
+        font-weight: bolder;
     }
 }
