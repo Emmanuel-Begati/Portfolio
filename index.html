@@ -11,7 +11,7 @@
     <body>
         <div id="header">
             <div class="container">
-                <nav>
+                <nav id="animatedText_nav">
                     <img src="" class="logo" alt="">
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
@@ -24,8 +24,8 @@
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
-                    <p> Machine Learning Engineer</p>
-                    <h1>Hi, I am <span>Emmanuel</span><br>Yakubu </h1>
+                    <p> Software Engineer</p>
+                    <h1 class ='intro' id="animatedText_intro">Hi, I am <span>Emmanuel<br>Yakubu</span> </h1>
                 </div>
             </div>
         </div>
@@ -179,6 +179,22 @@
 
 
         <script>
+            //Animation section
+            document.addEventListener('DOMContentLoaded', function () {
+            const animatedText_intro = document.getElementById('animatedText_intro');
+            const animatedText_nav  = document.getElementById('animatedText_nav')
+
+            // Add 'animated' class to trigger the fadeIn animation
+            setTimeout(() => {
+                animatedText_intro.classList.add('intro_animated');
+                animatedText_nav.classList.add('nav_animated');
+            }, 500);
+
+            
+
+            });
+
+
             var tablinks = document.getElementsByClassName('tab-links');
             var tabcontents = document.getElementsByClassName('tab-contents');
             function opentab(tabname){
