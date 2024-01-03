@@ -24,7 +24,7 @@
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
-                    <p> Software Engineer</p>
+                    <p id="colorchange"> Software Engineer</p>
                     <h1 class ='intro' id="animatedText_intro">Hi, I am <span>Emmanuel<br>Yakubu</span> </h1>
                 </div>
             </div>
@@ -183,6 +183,8 @@
             document.addEventListener('DOMContentLoaded', function () {
             const animatedText_intro = document.getElementById('animatedText_intro');
             const animatedText_nav  = document.getElementById('animatedText_nav')
+            const colorchange  = document.getElementById('colorchange')
+
 
             // Add 'animated' class to trigger the fadeIn animation
             setTimeout(() => {
@@ -190,7 +192,21 @@
                 animatedText_nav.classList.add('nav_animated');
             }, 500);
 
-            
+            // function getRandomColor() {
+            //     const letters = '0123456789ABCDEF';
+            //     let color = '#';
+            //     for (let i = 0; i < 6; i++) {
+            //     color += letters[Math.floor(Math.random() * 16)];
+            //     }
+            //     return color;
+            // }
+
+            // function changeTextColor() {
+            //     colorchange.style.color = getRandomColor();
+            // }
+
+            // // Change color every 5 seconds (5000 milliseconds)
+            // setInterval(changeTextColor, 5000);
 
             });
 
